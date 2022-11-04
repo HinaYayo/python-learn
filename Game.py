@@ -15,10 +15,12 @@ while num <= 3:
         print("您出的是{}，电脑出的是{}".format(data[user], data[com]))
         if user == com:
             print('平局')
+            print()
             continue
         elif (user == 0 and com == 1) or (user == 1 and com == 2) or (user == 2 and com == 0):
             print('你赢了')
             win_num += 1   #  win_num=win_num+1
+            print('win')
         else:
             print('你输了')
             lose_num += 1
